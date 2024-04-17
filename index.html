@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  data-wf-page="61d5dbdbe39827a12d4c97de"
+  data-wf-site="61d5b1b8dfe7f98d5d0dfa6e"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tipser Taco</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/6fd519cc43.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css"
+    />
+    <script src="https://kit.fontawesome.com/6fd519cc43.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="my-div" style="display: none" class="main-app">
+      <div class="banner">
+        <div class="video-wrapper">
+          <video
+            class="mbl-only video-bg"
+            loop
+            playsinline
+            muted
+            autoplay
+            src="./img/Mobile video.mp4"
+          ></video>
+        </div>
+        <video
+          class="video-bg desk-only"
+          autoplay
+          playsinline
+          loop
+          muted
+          src="./img/Untitled design (3).mp4"
+        >
+        </video>
+
+        <div>
+          <div class="nav-header" id="header">
+            <a href="#" class="logo">
+              <img src="./img/logo.png" alt="" />
+            </a>
+            <div class="flex yejd">
+              <a href="#" class="contactus"> Home </a>
+              <a href="#about" class="contactus"> About us </a>
+              <a href="#menu" class="contactus"> Menu </a>
+              <a href="#faq" class="contactus"> Faq </a>
+              <a href="#contact" class="contactus"> Contact us </a>
+            </div>
+            <div class="mbl-only hamnburg" onclick="toggleNav()">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+        </div>
+        <div class="banner-content" id="home">
+          <h1 class="banner-head">
+            LOREM IPSUM <br />
+            <span style="color: #30d5c8">dolor sit amet </span></h1
+          >
+          <div class="banner-desc">
+            <p class="banner-txt">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas
+              aliquid unde autem quis accusamus ea nisi asperiores architecto
+              totam atque porro tenetur, expedita quam aperiam maiores officia
+              iure non eos.
+            </p>
+            <a
+              href="https://www.jetfood.com/restaurant/app/89"
+              target="_blank"
+              class="contact-btn"
+            >
+              Download App
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="about" class="section-main">
+        <div class="row d-flex section-pad section2 full-cover justify-center">
+          <div class="col-md-7">
+            <h2 class="header2">
+              <span style="color: #30d5c8">LOREM IPSUM,<br /></span>dolor amet
+            </h2>
+            <p class="basic-para mt-4"
+              >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis
+              eum aspernatur voluptatum, rerum voluptas dolore, ipsum
+              dignissimos illum adipisci esse vitae quod labore deleniti
+              laboriosam harum optio, recusandae nam sit? Lorem ipsum dolor sit
+              amet consectetur adipisicing elit. Magni ex unde cupiditate
+              deleniti sit, est accusamus? Optio facere temporibus sed atque
+              vitae! Id eveniet quod unde error blanditiis minima animi.
+            </p>
+          </div>
+          <div class="col-md-4 coin-gif text-center">
+            <img src="./img/gif-coin.webp" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="section-marquee">
+        <div class="section scrolling-text no-borders wf-section">
+          <div class="scroll-wrapper">
+            <h2 class="scroll-h2"
+              >MORE <span class="scroll-h2-span">SALES. </span> MORE
+              <span class="scroll-h2-span">PROFIT. </span> MORE
+              <span class="scroll-h2-span">ORDERS. </span>
+            </h2>
+            <h2 class="scroll-h2"
+              >MORE <span class="scroll-h2-span">SALES. </span> MORE
+              <span class="scroll-h2-span">PROFIT. </span> MORE
+              <span class="scroll-h2-span">ORDERS. </span>
+            </h2>
+          </div>
+
+          <div class="reverse-scroll-wrapper">
+            <h2 class="scroll-h2-reverse"
+              >MORE <span class="scroll-h2-span">SALES. </span> MORE
+              <span class="scroll-h2-span">PROFIT. </span> MORE
+              <span class="scroll-h2-span">ORDERS. </span></h2
+            >
+            <h2 class="scroll-h2-reverse"
+              >MORE <span class="scroll-h2-span">SALES. </span> MORE
+              <span class="scroll-h2-span">PROFIT. </span> MORE
+              <span class="scroll-h2-span">ORDERS. </span></h2
+            >
+          </div>
+        </div>
+      </div>
+      <div id="menu" class="brand-section section-padding top-less">
+        <div class="flex-act">
+          <div class="top-brand">OUR MENU</div>
+          <div class="brand-desc">
+            <p class="basic-para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+              minima quam omnis numquam
+            </p>
+            <a
+              href="https://www.jetfood.com/restaurant/tipsea-taco/97t"
+              target="_blank"
+              class="contact-btn black-vg"
+            >
+              Order Online
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="menu-cards">
+          <div class="food-card" bis_skin_checked="1">
+            <img src="./img/menu-card.png" />
+            <div class="details" bis_skin_checked="1">
+              <h2>Food Name</h2>
+              <a
+                href="https://www.jetfood.com/restaurant/tipsea-taco/97t"
+                class="orange-text"
+                >order Online &gt;</a
+              >
+            </div>
+          </div>
+          <div class="food-card" bis_skin_checked="1">
+            <img src="./img/menu-card.png" />
+            <div class="details" bis_skin_checked="1">
+              <h2>Food Name</h2>
+              <a
+                href="https://www.jetfood.com/restaurant/tipsea-taco/97t"
+                class="orange-text"
+                >order Online &gt;</a
+              >
+            </div>
+          </div>
+          <div class="food-card" bis_skin_checked="1">
+            <img src="./img/menu-card.png" />
+            <div class="details" bis_skin_checked="1">
+              <h2>Food Name</h2>
+              <a
+                href="https://www.jetfood.com/restaurant/tipsea-taco/97t"
+                class="orange-text"
+                >order Online &gt;</a
+              >
+            </div>
+          </div>
+          <div class="food-card" bis_skin_checked="1">
+            <img src="./img/menu-card.png" />
+            <div class="details" bis_skin_checked="1">
+              <h2>Food Name</h2>
+              <a
+                href="https://www.jetfood.com/restaurant/tipsea-taco/97t"
+                class="orange-text"
+                >order Online &gt;</a
+              >
+            </div>
+          </div>
+          <div class="food-card" bis_skin_checked="1">
+            <img src="./img/menu-card.png" />
+            <div class="details" bis_skin_checked="1">
+              <h2>Food Name</h2>
+              <a
+                href="https://www.jetfood.com/restaurant/tipsea-taco/97t"
+                class="orange-text"
+                >order Online &gt;</a
+              >
+            </div>
+          </div>
+          <div class="food-card" bis_skin_checked="1">
+            <img src="./img/menu-card.png" />
+            <div class="details" bis_skin_checked="1">
+              <h2>Food Name</h2>
+              <a
+                href="https://www.jetfood.com/restaurant/tipsea-taco/97t"
+                class="orange-text"
+                >order Online &gt;</a
+              >
+            </div>
+          </div>
+          <div class="food-card" bis_skin_checked="1">
+            <img src="./img/menu-card.png" />
+            <div class="details" bis_skin_checked="1">
+              <h2>Food Name</h2>
+              <a
+                href="https://www.jetfood.com/restaurant/tipsea-taco/97t"
+                class="orange-text"
+                >order Online &gt;</a
+              >
+            </div>
+          </div>
+          <div class="food-card" bis_skin_checked="1">
+            <img src="./img/menu-card.png" />
+            <div class="details" bis_skin_checked="1">
+              <h2>Food Name</h2>
+              <a
+                href="https://www.jetfood.com/restaurant/tipsea-taco/97t"
+                class="orange-text"
+                >order Online &gt;</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-marquee">
+        <div class="section scrolling-text no-borders wf-section">
+          <div class="scroll-wrapper">
+            <h2 class="scroll-h2"
+              >MORE <span class="scroll-h2-span">SALES. </span> MORE
+              <span class="scroll-h2-span">PROFIT. </span> MORE
+              <span class="scroll-h2-span">ORDERS. </span>
+            </h2>
+            <h2 class="scroll-h2"
+              >MORE <span class="scroll-h2-span">SALES. </span> MORE
+              <span class="scroll-h2-span">PROFIT. </span> MORE
+              <span class="scroll-h2-span">ORDERS. </span></h2
+            >
+          </div>
+          <div class="reverse-scroll-wrapper">
+            <h2 class="scroll-h2-reverse" style="will-change: transform"
+              >MORE <span class="scroll-h2-span">SALES. </span> MORE
+              <span class="scroll-h2-span">PROFIT. </span> MORE
+              <span class="scroll-h2-span">ORDERS. </span></h2
+            >
+            <h2 class="scroll-h2-reverse"
+              >MORE <span class="scroll-h2-span">SALES. </span> MORE
+              <span class="scroll-h2-span">PROFIT. </span> MORE
+              <span class="scroll-h2-span">ORDERS. </span></h2
+            >
+          </div>
+        </div>
+      </div>
+      <div id="faq" class="section-main">
+        <div
+          class="row d-flex section-pad faq section2 full-cover justify-center"
+        >
+          <div class="col-md-6">
+            <h2 class="header2">
+              <span style="color: #ffffff"
+                >FAQ<span class="lowercase" style="text-transform: lowercase"
+                  >s</span
+                >
+                <br
+              /></span>
+              <!-- <span style="color: #00bf63">IT WORK?</span> -->
+            </h2>
+            <p style="color: #ffffff" class="basic-para mt-4"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+              ullam provident amet, esse minus quam illum asperiores similique
+            </p>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="faqs">
+              <div onclick="toggleFaq1()" id="faq1" class="individual-faq">
+                <div class="question">
+                  Lorem Ipsum sit <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+              <div onclick="toggleFaq2()" id="faq2" class="individual-faq">
+                <div class="question">
+                  Lorem Ipsum sit <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+              <div onclick="toggleFaq3()" id="faq3" class="individual-faq">
+                <div class="question">
+                  Lorem Ipsum sit <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-padding contact-form" id="contact">
+        <h1 class="header2 black-clr mb-3">Contact us</h1>
+        <p class="basic-para black-clr"> Feel free to write us</p>
+        <form
+          class="contact-main"
+          method="POST"
+          name="New Form"
+          onsubmit="sendit();reset(); return false;"
+        >
+          <div class="contact-fields">
+            <div class="single-input">
+              <label for="form-field-name" class="field-label">
+                First Name
+              </label>
+              <input
+                type="text"
+                name="form_fields[name]"
+                id="form-field-name"
+                class="form-input"
+                placeholder="First Name"
+                required="required"
+              />
+            </div>
+            <div class="single-input">
+              <label for="form-field-field_37b26c2" class="field-label">
+                Last Name
+              </label>
+              <input
+                type="text"
+                name="form_fields[field_37b26c2]"
+                id="form-field-field_37b26c2"
+                class="form-input"
+                placeholder="Last Name"
+                required="required"
+              />
+            </div>
+            <div class="single-input">
+              <label for="form-field-field_7797e05" class="field-label">
+                Phone Number
+              </label>
+
+              <input
+                type="tel"
+                name="form_fields[field_7797e05]"
+                id="phoneNum"
+                class="form-input"
+                placeholder="Phone Number"
+                required="required"
+              />
+            </div>
+            <div class="single-input">
+              <label for="form-field-email" class="field-label">
+                Email Address
+              </label>
+              <input
+                type="email"
+                name="form_fields[email]"
+                id="form-field-email"
+                class="form-input email"
+                placeholder="Email Address"
+                required="required"
+              />
+            </div>
+            <div class="single-input text-msg">
+              <label for="form-field-email" class="field-label">
+                Message
+              </label>
+
+              <textarea
+                name=""
+                id=""
+                class="form-input email"
+                cols="10"
+                rows="2"
+                placeholder="Enter your Message"
+              ></textarea>
+            </div>
+
+            <div class="btn-wrap">
+              <button
+                id="btnSub"
+                type="submit"
+                class="elementor-button elementor-size-md"
+              >
+                <span>
+                  <span class="elementor-button-icon"> </span>
+                  <span class="elementor-button-text">SUBMIT</span>
+                </span>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="footer">
+        <div class="top-f">
+          <div class="inner-top">
+            <a href="#" class="footer-logo"
+              ><img src="./img/logo.png" alt=""
+            /></a>
+            <div class="infos">
+              <div class="left-info">
+                <p class="tm">Address: Next to Chesapeake City Post Office</p>
+                <p class="tm"
+                  >Bridge Pizza <br />
+                  (410) 609-9007</p
+                >
+              </div>
+              <div class="right-info">
+                <ul>
+                  <li>
+                    <a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                 
+                  </li>
+                  <li>
+                       <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                  </li>
+                  <li>
+                    
+                    <a href="" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sizzle-about">© 2024 . All rights reserved.</div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+  <script src="https://alexandrebuffet.fr/codepen/slider/slick-animation.min.js"></script>
+  <script>
+    // Init slick slider + animation
+    $(".slider")
+      .slick({
+        autoplay: true,
+        speed: 800,
+        lazyLoad: "progressive",
+        arrows: false,
+        dots: true,
+      })
+      .slickAnimation();
+  </script>
+  <script>
+    $(".slick-carousel").slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      arrows: true,
+      dots: true,
+      responsive: [
+        {
+          // If Screen Size More than 768px
+          breakpoint: 1024,
+          settings: {
+            infinite: true,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            arrows: true,
+            dots: true,
+          },
+        },
+        {
+          // If Screen Size More than 768px
+          breakpoint: 768,
+          settings: {
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            dots: true,
+          },
+        },
+      ],
+    });
+  </script>
+  <script src="./js/app.js"></script>
+  <script
+    src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=61d5b1b8dfe7f98d5d0dfa6e"
+    type="text/javascript"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"
+  ></script>
+  <script src="./js/main.js" type="text/javascript"></script>
+</html>
