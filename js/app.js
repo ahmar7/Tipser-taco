@@ -88,6 +88,7 @@ let sendit = () => {
 function validateRecaptcha() {
   var response = grecaptcha.getResponse();
   var btnSub = document.getElementById("btnSub"); // Get the submit button element
+  console.log("response: ", response);
   if (response.length === 0) {
     // reCAPTCHA not verified, disable the submit button
     btnSub.disabled = true;
