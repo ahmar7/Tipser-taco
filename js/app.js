@@ -56,11 +56,11 @@ let sendit = () => {
     console.log("response: ", response);
     if (response.length === 0) {
       // reCAPTCHA not verified, disable the submit button
-      btnSub.disabled = true;
+
       return false;
     } else {
       // reCAPTCHA verified, enable the submit button
-      btnSub.disabled = false;
+
       return true;
     }
   }
