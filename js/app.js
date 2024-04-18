@@ -49,14 +49,10 @@ let sendit = () => {
   const lname = document.getElementById("form-field-field_37b26c2");
   const phoneNum = document.getElementById("phoneNum");
   const EmailAdress = document.getElementById("form-field-email");
-  const businessName = document.getElementById("businessName");
-  const businessAddress = document.getElementById("businessAddress");
-  const businessType = document.getElementById("businessType");
-  const businessState = document.getElementById("businessState");
-  const Country = document.getElementById("Country");
-  const locNum = document.getElementById("locNum");
-  const businessZip = document.getElementById("businessZip");
-  const submit = document.getElementById("submit");
+  const msg = document.getElementById("msg");
+  if (!validateRecaptcha()) {
+    return; // Exit the function if reCAPTCHA is not completed
+  }
 
   let ebody = `
   <span>First Name: </span> ${fname.value}
@@ -67,30 +63,19 @@ let sendit = () => {
   <br>
   <span>phone Number: </span> ${phoneNum.value}
   <br>
-  <span>business Name: </span> ${businessName.value}
-  <br>
-  <span>business Address: </span> ${businessAddress.value}
-  <br>
-  <span>business Type: </span> ${businessType.value}
-  <br>
-  <span>business State: </span> ${businessState.value}
-  <br>
-  <span>Country: </span> ${Country.value}
-  <br>
-  <span>location Number: </span> ${locNum.value}
-  <br>
-  <span>business Zip: </span> ${businessZip.value}
+  <span>Message: </span> ${msg.value}
+ 
   `;
 
+  let btnSub = document.getElementById("btnSub");
   Email.send({
-    SecureToken: "750609cb-037c-4496-815c-936265d4ff8c",
+    SecureToken: "48b9906f-9f05-4aa6-bf6f-5bfd5cf203c4",
     To: "",
     From: "",
-    Subject: "Sizzle email",
+    Subject: "Tipser Taco email",
     Body: ebody,
   }).then((message) => {
     if (message === "OK") {
-      let btnSub = document.getElementById("btnSub");
       alert(
         "Thank you for contacting us, we have received your email and will contact you soon"
       );
@@ -100,6 +85,19 @@ let sendit = () => {
     }
   });
 };
+function validateRecaptcha() {
+  var response = grecaptcha.getResponse();
+  var btnSub = document.getElementById("btnSub"); // Get the submit button element
+  if (response.length === 0) {
+    // reCAPTCHA not verified, disable the submit button
+    btnSub.disabled = true;
+    return false;
+  } else {
+    // reCAPTCHA verified, enable the submit button
+    btnSub.disabled = false;
+    return true;
+  }
+}
 window.addEventListener("scroll", function () {
   let header = this.document.querySelector("#header");
   // bar.classList.toggle('removeBar', window.scrollY >0)

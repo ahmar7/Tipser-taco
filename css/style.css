@@ -77,6 +77,9 @@
 html {
   scroll-behavior: smooth;
 }
+.btnsf:disabled {
+  opacity: 0.5;
+}
 body {
   margin: 0;
   box-sizing: border-box;
@@ -385,7 +388,7 @@ html.w-mod-touch * {
   padding-inline: 0 !important;
 }
 .brand-section {
-  background-color: #30d5c8;
+  background-color: white;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1330,4 +1333,173 @@ input[type="range"]::-webkit-slider-thumb {
   .menu-cards .food-card {
     width: 100%;
   }
+}
+/*  */
+.kELpqC {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-inline: auto;
+  align-items: start;
+  margin-top: 50px;
+  max-width: 1200px;
+}
+
+.bkzFU {
+  min-width: calc(100% + 48px);
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+.caHWCJ {
+  display: flex;
+  margin: 16px 24px;
+}
+.caHWCJ {
+  display: flex;
+  margin: 16px 24px;
+}
+.caHWCJ .Image__ImageComponentContainer-sc-ornohg-1 {
+  width: 120px;
+  height: 120px;
+}
+.dxAAlq {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: all 0.1s ease 0s;
+}
+.ihOAPa::after {
+  content: " ";
+  border: 0.8px solid rgba(126, 126, 126, 0.1);
+  display: block;
+  position: absolute;
+  inset: 0px;
+  z-index: 0;
+}
+.ellxaa {
+  width: 100%;
+}
+.kdCTah {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: baseline;
+  align-items: baseline;
+}
+.kNnnEf {
+  color: rgb(17, 17, 17);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  -webkit-box-align: baseline;
+  align-items: baseline;
+}
+.ihOAPa {
+  width: 80px;
+  height: 80px;
+  border-radius: 4px;
+  margin-right: 16px;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.caHWCJ .Name__NameComponent-sc-6egqc9-0 {
+  text-align: left;
+  flex-shrink: 1;
+  max-width: 100%;
+  overflow: hidden;
+  margin-right: 10px;
+  position: relative;
+}
+
+.kUghpB {
+  flex-shrink: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.31;
+  text-align: center;
+  color: rgb(17, 17, 17);
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+.gRPOUR .Item__ItemFooterText-sc-g02sy7-2,
+.gRPOUR .Description__DescriptionComponent-sc-jr8o0s-0,
+.gRPOUR .Price__PriceComponent-sc-2p929t-0,
+.gRPOUR .Name__NameComponent-sc-6egqc9-0,
+.gRPOUR .Info__InfoCaption-sc-qu7fnz-2 {
+  color: rgb(17, 17, 17);
+}
+
+.caHWCJ .Price__PriceComponent-sc-2p929t-0 {
+  align-self: baseline;
+  white-space: nowrap;
+}
+
+.fejNrV {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: right;
+  color: rgb(17, 17, 17);
+}
+
+.caHWCJ .Description__DescriptionComponent-sc-jr8o0s-0 {
+  margin-right: 79px;
+}
+
+.voUNV {
+  opacity: 0.65;
+  font-size: 16px;
+  line-height: 1.38;
+  text-align: left;
+  color: rgba(17, 17, 17, 0.65);
+  margin-top: 2px;
+  word-break: break-word;
+}
+.our-mbl {
+  font-size: 50px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-transform: none;
+
+  line-height: 55px;
+  font-weight: bold;
+}
+.ans {
+  max-width: 400px !important;
+}
+.img-app {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.img-app img {
+  width: 150px;
+}
+@media (max-width: 950px) {
+  .bkzFU {
+    flex-direction: column;
+    min-width: auto;
+  }
+  .caHWCJ {
+    width: 100% !important;
+    margin-inline: 0;
+  }
+}
+@media (max-width: 420px) {
+  .brand-section {
+    padding-inline: 20px;
+  }
+}
+.area-map iframe {
+  width: 100%;
+}
+.bgje {
+  background-color: #30d5c8;
 }
