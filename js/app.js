@@ -50,6 +50,21 @@ let sendit = () => {
   const phoneNum = document.getElementById("phoneNum");
   const EmailAdress = document.getElementById("form-field-email");
   const msg = document.getElementById("msg");
+  function validateRecaptcha() {
+    var response = grecaptcha.getResponse();
+    var btnSub = document.getElementById("btnSub"); // Get the submit button element
+    console.log("response: ", response);
+    if (response.length === 0) {
+      // reCAPTCHA not verified, disable the submit button
+      btnSub.disabled = true;
+      return false;
+    } else {
+      // reCAPTCHA verified, enable the submit button
+      btnSub.disabled = false;
+      return true;
+    }
+  }
+  validateRecaptcha();
   if (!validateRecaptcha()) {
     return; // Exit the function if reCAPTCHA is not completed
   }
@@ -85,20 +100,7 @@ let sendit = () => {
     }
   });
 };
-function validateRecaptcha() {
-  var response = grecaptcha.getResponse();
-  var btnSub = document.getElementById("btnSub"); // Get the submit button element
-  console.log("response: ", response);
-  if (response.length === 0) {
-    // reCAPTCHA not verified, disable the submit button
-    btnSub.disabled = true;
-    return false;
-  } else {
-    // reCAPTCHA verified, enable the submit button
-    btnSub.disabled = false;
-    return true;
-  }
-}
+
 window.addEventListener("scroll", function () {
   let header = this.document.querySelector("#header");
   // bar.classList.toggle('removeBar', window.scrollY >0)
